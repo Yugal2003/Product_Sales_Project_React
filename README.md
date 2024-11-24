@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+LIVE DEMO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sales Management Project
 
-## Available Scripts
+A **Sales Management System** built with **React** and **JSON Server**, designed to manage products, track sales, generate invoices, and provide a seamless user experience for handling sales operations.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Product Management**: Add, edit, and delete products with ease.
+- **Sales Tracking**: Track user-submitted sales data and update records in real-time.
+- **Invoice Generation**: Create detailed sales invoices and download them as PDFs.
+- **Pagination & Sorting**: Efficiently handle large datasets with pagination and sorting functionalities.
+- **Responsive Design**: Fully responsive interface for use on all device sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React.js, Tailwind CSS (or your chosen styling library)
+- **Backend**: JSON Server for API simulation
+- **Libraries**:
+  - `axios`: For API requests
+  - `jspdf` and `html2canvas`: For PDF generation
+  - `react-table`: For data display
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/<your-username>/sales-management-project.git
+cd sales-management-project
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start Json-server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+json-server --watch db.json --port 3001
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📄 Key Features Description
+Product Management
+Add new products to the database.
+Edit existing products via a modal popup.
+Delete products after confirmation.
+Sales Tracking
+View and manage sales entries submitted by users.
+Track individual product sales and their quantities.
+Invoice Generation
+Generate invoices for selected products.
+Download invoices as PDF files for records.
+Pagination & Sorting
+Paginated views to handle large datasets.
+Sort tables by product names, quantities, or sales data.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+⚙️ API Details
+JSON Server API Endpoints
+Products
 
-### Making a Progressive Web App
+GET /products: Fetch all products
+POST /products: Add a new product
+PUT /products/:id: Update a product
+DELETE /products/:id: Delete a product
+Sales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+GET /sales: Fetch all sales records
+POST /sales: Add a new sale
+Invoices
 
-### Advanced Configuration
+GET /invoices: Fetch all invoices
+POST /invoices: Create a new invoice
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
