@@ -1,4 +1,4 @@
-<a href="https://restaurants-app-using-react-tool-kit.vercel.app/" target="_blank">LIVE</a>
+<a href="https://product-sales-project-react.vercel.app/" target="_blank">LIVE</a>
 
 # Sales Management Project
 
