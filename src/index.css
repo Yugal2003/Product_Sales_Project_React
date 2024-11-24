@@ -1,13 +1,205 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.img_photo{
+  border-radius: 50%;
+  margin: 0.3rem 0rem 0rem 1.5rem;
+}
+.borderRadious{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bord{
+    background-color: rgb(208, 83, 37);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
 }
+
+.bord1{
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.1rem 0.2rem;
+}
+
+.bord2{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .invoice-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .invoice-header,
+  .billing-section,
+  .invoice-table,
+  .summary-section,
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .invoice-logo .logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .invoice-title {
+    text-align: right;
+  }
+  
+  .invoice-title h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .invoice-details p {
+    margin: 5px 0;
+  }
+  
+  .billing-section h3 {
+    margin: 0;
+  }
+  
+  .invoice-table {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    gap: 10px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+  }
+  
+  .table-header,
+  .table-row {
+    display: contents;
+  }
+  
+  .table-header div {
+    font-weight: bold;
+  }
+  
+  .table-row div {
+    padding: 8px 0;
+  }
+  
+  .summary-section {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+  
+  .summary-row,
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  
+  .total-row {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .footer-section {
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .payment-info,
+  .company-info {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .invoice-container {
+      padding: 15px;
+    }
+  
+    .invoice-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .invoice-title {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .invoice-table {
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .invoice-table {
+      grid-template-columns: 2fr 1fr;
+    }
+  
+    .table-header div:nth-child(n+3),
+    .table-row div:nth-child(n+3) {
+      display: none;
+    }
+  
+    .summary-row,
+    .total-row {
+      font-size: 1em;
+    }
+  }  
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }  
+
+  .img_edit_product{
+    padding: 0.5rem;
+    /* padding-left: 40px; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
