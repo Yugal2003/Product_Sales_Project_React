@@ -1,5 +1,3 @@
-<a href="https://product-sales-project-react.vercel.app/" target="_blank">LIVE</a>
-
 # Sales Management Project
 
 A **Sales Management System** built with **React** and **JSON Server**, designed to manage products, track sales, generate invoices, and provide a seamless user experience for handling sales operations.
